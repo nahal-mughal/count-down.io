@@ -28,6 +28,7 @@
     font-size: 2.4rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .column {
@@ -49,6 +50,27 @@ input {
     font-size: 1.3rem;
     border-radius: 10px;
     text-align: center;
-    border: transparent;
+    border: none;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.8rem;  /* Smaller font size for the title */
+    }
+
+    .column {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .column div {
+        width: 100%;  /* Full width for smaller devices */
+        padding: 10px;  /* Padding adjustment for smaller devices */
+    }
+
+    input {
+        width: 100%;  /* Full input width for easier mobile interaction */
+        font-size: 1rem;  /* Smaller font size for inputs */
+    }
 }
